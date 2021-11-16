@@ -1,0 +1,18 @@
+class Car:
+    count = 0
+    def __init__(self, p, c, m):
+        self.price = p
+        self.colour = c
+        self.model = m
+        Car.count += 1
+    def getprice(self):
+        return self.price
+    def getcolour(self):
+        return self.colour
+    def getmodel(self):
+        return self.model
+car1 = Car(16000, "black", "audi")
+car2 = Car(5000, "white", "reno")
+
+print("цена: ", car1.price,"цвет: ", car1.colour,"модель: ", car1.model)
+print("цена: ", car2.price,"цвет: ", car2.colour,"модель: ", car2.model)
